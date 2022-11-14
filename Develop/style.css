@@ -12,6 +12,13 @@ body {
     padding: 10px;
   }
   
+.jumbotron {
+    background color: transparent;
+    color: black;
+    border-bottom: 10px;
+
+}
+
   .description {
     white-space: pre-wrap;
   }
