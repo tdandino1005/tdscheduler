@@ -2,8 +2,6 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
  // Display today's day and date
- let todayDate = moment().format('dddd, MMM Do YYYY');
- $("#currentDay").html(todayDate);
 
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
