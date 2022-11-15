@@ -17,7 +17,7 @@ body {
     background-color: transparent;
     color: black;
     border-radius: 0;
-    border-bottom: 10px black;
+    border-bottom: 10px solid black;
 
 }
 
@@ -66,5 +66,9 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+  }
+
+  #currentDay {
+    color: black;
   }
   

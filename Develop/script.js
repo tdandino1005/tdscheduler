@@ -1,8 +1,4 @@
-
- var today = moment();
- var timeblock1 = document.querySelector('.container');
-
- $('#currentDay').text(today.format('LLL'));
+$('currentday').text(today.format('LLL'));
 
 $('.saveBtn').on('click', function () {
 
@@ -12,8 +8,6 @@ $('.saveBtn').on('click', function () {
   
     localStorage.setItem(timeKey, textValue);
   });
-
-
 
 
 $('#hour8 .description').val(localStorage.getItem('hour8'));
@@ -27,7 +21,7 @@ $('#hour15 .description').val(localStorage.getItem('hour15'));
 $('#hour16 .description').val(localStorage.getItem('hour16'));
 
 function audit() {
-    let currentHour = today.hours();
+    var currentHour = today.hours();
 
     $('.time-block').each(function () {
         var time = parseInt($(this).attr('id').split("hour")[1]);
@@ -49,8 +43,8 @@ function audit() {
     });
 }
 
-audit();
+
 
 setTimeout(function ()  {
-    location = ''
+    location = '';
 }, 1000 * 60);
